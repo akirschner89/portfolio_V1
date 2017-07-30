@@ -63,8 +63,6 @@ section.background-gray-lightest {
 }
 .img-responsive {
   margin: 0 auto;
-  height: 350px;
-  width: 100%;
 }
 .no-space .box {
   margin: 0 -15px;
