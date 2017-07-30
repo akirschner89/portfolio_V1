@@ -102,7 +102,7 @@ function map() {
             }
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
-            var markerImage = 'favicon.png';
+            var markerImage = 'img/bitmoji-coffee.png';
 
             var marker = new google.maps.Marker({
                 position: location,
@@ -114,7 +114,7 @@ function map() {
             var contentString = '<div class="info-window">' +
                     '<h3>Take me somewhere</h3>' +
                     '<div class="info-content">' +
-                    '<p>Drag my bitmoji anywhere around the world! I\'m originally from New York, NY - feel free to start there</p>' +
+                    '<p>Drag my bitmoji anywhere around the world to drink coffee and listen to music. Let\'s start in Austin, TX!.</p>' +
                     '</div>' +
                     '</div>';
 

@@ -8,7 +8,14 @@
 }
 
 .devIcons {
-	height: 15em;
+	height: 12em;
     max-width: 150%;
     width: 11em;
+}
+
+.profile-img {
+	height: 370px;
+    width: 80%;
+    margin-right: 15%;
+    margin-top: 10%;
 }
