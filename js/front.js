@@ -371,7 +371,7 @@ $.fn.alignElementsSameHeight = function () {
     });
 }
 
-$(window).on('load',function () {
+$(window).on('load', function () {
 
     windowWidth = $(window).width();
 
