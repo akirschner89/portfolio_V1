@@ -282,7 +282,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       this.resize(width);
       disableExternalCheck = this.$element.data('disableExternalCheck') || false;
       if (!disableExternalCheck && !this.isExternal(url)) {
-        this.lightbox_body.on('load',url, $.proxy(function() {
+        this.lightbox_body.on('load', url, $.proxy(function() {
           return _this.$element.trigger('loaded.bs.modal');
         }));
       } else {
