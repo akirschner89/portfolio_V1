@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_V1",
+  "version": "1.0.0",
+  "description": "The new version of an updated portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akirschner89/portfolio_V1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akirschner89/portfolio_V1/issues"
+  },
+  "homepage": "https://github.com/akirschner89/portfolio_V1#readme"
+}
