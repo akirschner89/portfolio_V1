@@ -43,21 +43,32 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid ch-grid">
         <div class="row no-space">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 ch-item ch-img-1">
+              <div class="ch-info">
             <div class="box"><a href="https://akirschner89.github.io/stay%2Dand%2Dplay/index.html" title="" target="_blank" data-toggle="lightbox" data-gallery="remoteload" data-title="Stay & Play" data-footer="Front end app utilizing jQuery, Ticketmaster & Google maps API, Javascript, HTML, CSS, and Firebase allowing users to search for events and hotels in a new city." data-type="url"><img src="img/portfolio/snp.png" alt="staynplay homepage" class="img-responsive projectIcons"></a></div>
+            <!-- <h3>Stay & Play</h3> -->
           </div>
-          <div class="col-sm-4 col-md-3">
+          </div>
+          <div class="col-sm-4 col-md-3 ch-item ch-img-2">
+              <div class="ch-info">
             <div class="box"><a href="https://floating-island-54522.herokuapp.com/home.html" title="" target="_blank" data-toggle="lightbox" data-gallery="remoteload" data-title="The Game of Thrones House Finder" data-footer="Full stack app to find your house from Game of Thrones. Includes Express, Node.js, and NPM packages for the back-end and HTML, Javascript, jQuery, CSS, and Boostrap for the front-end"><img src="img/portfolio/throne.jpg" alt="" class="img-responsive projectIcons"></a></div>
+            <!-- <h3>Game of Thrones House Finder App</h3> -->
           </div>
-          <div class="col-sm-4 col-md-3">
+          </div>
+          <div class="col-sm-4 col-md-3 ch-item ch-img-3">
+              <div class="ch-info">
             <div class="box"><a href="https://akirschner89.github.io/TriviaGame/index.html" title="" target="_blank" data-toggle="lightbox" data-gallery="remoteload" data-title="Spurs Trivia Game" data-footer="Front-end Trivia Game using jQuery & Javascript - 80's themed based on the (mostly) local San Antonio Spurs" data-type="url"><img src="img/portfolio/spurs.png" alt="" class="img-responsive projectIcons"></a></div>
+            <!-- <h3>Spurs Trivia Game</h3> -->
           </div>
-          <div class="col-sm-4 col-md-3">
+          </div>
+          <div class="col-sm-4 col-md-3 ch-item ch-img-4">
+              <div class="ch-info">
             <div class="box"><a href="https://frozen-falls-30085.herokuapp.com/" title="" target="_blank" data-toggle="lightbox" data-gallery="remoteload" data-title="Swindler's List" data-footer="The our take on the popular Craiglist - but made specifically for buyers. Leveraging Node, Express, Sequelize for the MVC / back-end and HTML, Javascript, jQuery, Materialize, Dropzone.JS for the front."><img src="img/portfolio/swindle.jpeg" alt="" class="img-responsive projectIcons"></a></div>
+            <!-- <h3>Swindler's List</h3> -->
           </div>
-
+          </div>
         </div>
       </div>
     </section>
@@ -144,32 +155,34 @@
             <h2 class="heading">Contact</h2>
             <div class="row">
               <div class="col-md-6">
-                <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+                <form id="contact-form" action="https://formspree.io/adam.l.kirschner@gmail.com"
+                method="POST" class="contact-form form">
                   <div class="controls">
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <div class="form-group">
-                          <label for="name">First *</label>
-                          <input type="text" name="firstname" id="name" placeholder="Enter your First Name" required="required" class="form-control">
+                          <label for="name">Name *</label>
+                          <input type="text" name="name" id="name" placeholder="Enter your Name" required="required" class="form-control">
                         </div>
                       </div>
-                      <div class="col-sm-6">
+                      <!-- <div class="col-sm-6">
                         <div class="form-group">
                           <label for="surname">Last *</label>
-                          <input type="text" name="lastname" id="surname" placeholder="Enter your Last Name" required="required" class="form-control">
+                          <input type="text" name="name" id="surname" placeholder="Enter your Last Name" required="required" class="form-control">
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="form-group">
                       <label for="email">Email *</label>
-                      <input type="email" name="email" id="email" placeholder="Enter your Email" required="required" class="form-control">
+                      <input type="email" name="_replyto" id="email" placeholder="Enter your Email" required="required" class="form-control">
                     </div>
                     <div class="form-group">
                       <label for="message">Message *</label>
                       <textarea rows="4" name="message" id="message" placeholder="Enter your Message" required="required" class="form-control"></textarea>
                     </div>
                     <div class="text-center">
-                      <input type="submit" value="Send message" class="btn btn-primary btn-block">
+                      <input type="hidden" name="_subject" value="Hey Adam!" />
+                      <input type="submit" value="Send" class="btn btn-primary btn-block email-submit">
                     </div>
                   </div>
                 </form>
@@ -213,7 +226,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
      <!-- <script> window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"></script>') </script>    -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
     <!-- Boostrap 4 jquery + JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
