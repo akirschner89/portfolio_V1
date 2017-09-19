@@ -4,6 +4,7 @@
   "description": "The new version of an updated portfolio",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.18.1",
     "express": "^4.15.4",
     "jquery": "^3.2.1"
   },

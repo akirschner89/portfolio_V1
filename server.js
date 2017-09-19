@@ -1,12 +1,27 @@
 var express = require('express');
 var app = express();
-var api = express.Router();
+var router = express.Router();
+// var bodyParser = require("body-parser");
 // var emailRoute = require('./js/emailScript.js')(api);
 
 app.use(express.static(__dirname));
 
-// require('./js/emailScript.js')(api);
-// app.use('/', emailRoute);
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.text());
+// app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+// api.use('./js/emailScript.js');
+// app.use('/', api);
+
+app.post('/contact.php', function (req, res) {
+    res.send(req.params)
+  });
+
+  router.post('/contact.php', function (req, res) {
+    res.send(req.params)
+  })
+
 
 
 app.listen(process.env.PORT || 8080);

@@ -17,17 +17,35 @@ $("#contactForm").on('submit', function (e) {
         message: $("#message").val().trim()
     };
 
-    if (isValidEmail(data['email']) && (data['message'].length > 1) && (data['firstname'].length > 1) && (data['lastname'].length > 1)) {
+    // console.log(data['firstname']);
+    // console.log(data['firstname'].length > 0);
+    // console.log(data['lastname']);
+    // console.log(data['lastname'].length > 0);
+    // console.log(data['email']);
+    // console.log(isValidEmail(data['email']));
+    // console.log(data['message']);
+    // console.log(data['message'].length > 1);
+
+
+    if (isValidEmail(data['email']) && (data['message'].length > 1) && (data['firstname'].length >= 1) && (data['lastname'].length >= 1)) {
+        console.log("validation works!");
         $.ajax({
-            type: "POST",
-            url: "sendmail.php",
+            url: "contact.php",
+            type: "post",
             data: data,
             success: function () {
                 $('#contactForm .input-success').delay(500).fadeIn(1000);
                 $('#contactForm .input-error').fadeOut(500);
-            }
+                // alert("success");
+                console.log(data);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert("ERROR:" + xhr.responseText+" - "+thrownError);
+                }
+               
         });
     } else {
+        console.log("no validation for you!");
         $('#contactForm .input-error').delay(500).fadeIn(1000);
         $('#contactForm .input-success').fadeOut(500);
     }
@@ -46,7 +64,7 @@ $("#contactForm").on('submit', function (e) {
 
     //     $.ajax({
     //         type: "POST",
-    //         url: "sendmail.php",
+    //         url: "contact.php",
     //         data: data,
     //         success: function(){
     //         $('.success').fadeIn(1000);

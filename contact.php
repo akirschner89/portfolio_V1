@@ -2,7 +2,7 @@
 // Variables
 $firstname = trim($_POST['first']);
 $lastname = trim($_POST['last']);
-$email = trim($_POST['_replyto']);
+$email = trim($_POST['email']);
 $subject = "Hey Adam!";
 $message = trim($_POST['message']);
 
