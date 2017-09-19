@@ -2,7 +2,7 @@
 // Variables
 $firstname = trim($_POST['first']);
 $lastname = trim($_POST['last']);
-$email = trim($_POST['email']);
+$email = trim($_POST['_replyto']);
 $subject = "Hey Adam!";
 $message = trim($_POST['message']);
 
@@ -26,6 +26,7 @@ if( isset($firstname) && isset($lastname) && isset($email) && isset($subject) &&
 	// HTML Elements for Email Body
 	$body = <<<EOD
 	<strong>firstName:</strong> $firstname <br>
+	<strong>lastName:</strong> $lastname <br>
 	<strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a> <br> <br>
 	<strong>Message:</strong> $message <br>
 EOD;
@@ -38,6 +39,5 @@ EOD;
 	// PHP email sender
 	mail($to, $sub, $body, $headers);
 }
-
 
 ?>

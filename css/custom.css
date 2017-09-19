@@ -24,6 +24,24 @@
 	max-width: 70%;
 }
 
+/* ===contact form=== */
+
+.input-success,
+.input-error {
+    margin-bottom: 0;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.input-success {
+    border: 1px solid #01B500;
+}
+
+.input-error {
+    border: 1px solid #ff0000;
+}
+
 /* hover over effect for portfolio items */
 
 /* standard */
