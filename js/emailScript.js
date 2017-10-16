@@ -17,14 +17,6 @@ $("#contactForm").on('submit', function (e) {
         message: $("#message").val().trim()
     };
 
-    // console.log(data['firstname']);
-    // console.log(data['firstname'].length > 0);
-    // console.log(data['lastname']);
-    // console.log(data['lastname'].length > 0);
-    // console.log(data['email']);
-    // console.log(isValidEmail(data['email']));
-    // console.log(data['message']);
-    // console.log(data['message'].length > 1);
 
 
     if (isValidEmail(data['email']) && (data['message'].length > 1) && (data['firstname'].length >= 1) && (data['lastname'].length >= 1)) {
@@ -54,22 +46,3 @@ $("#contactForm").on('submit', function (e) {
 });
 
 
-    // $(".email-submit").on('click', function() {
-    //     var data = {
-    //     firstname: $("#name").val().trim(),
-    //     lastname: $("#surname").val().trim(),
-    //     email: $("#email").val().trim(),
-    //     message: $("#message").val().trim()
-    //     };
-
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "contact.php",
-    //         data: data,
-    //         success: function(){
-    //         $('.success').fadeIn(1000);
-    //         }
-    //     });
-
-    //     return true;
-    // });
